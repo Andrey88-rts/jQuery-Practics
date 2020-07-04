@@ -1,6 +1,6 @@
 /* Создание пианино на клавиатуре */
 /* Стили: начало */
-.info {
+/* .info {
   font-size: 18px;
   margin: 20px;
 }
@@ -88,6 +88,55 @@
   .key:nth-child(14) {
     display: none;
   }
-}
+} */
 
 /* Стили: конец */
+
+/* Стили для модального окна */
+body {
+	position: relative;
+}
+
+.container {
+	padding-top: 20%;
+}
+.overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	display: none;
+}
+.popup {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 120%;
+	top: 0%;	
+	padding: 20px;
+	background-color: #fcfcfc;
+	
+}
+.popup_active {
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+.close-btn {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-size: 2rem;
+}
+.close-btn:hover {
+	cursor: pointer;
+}
+.form-control:focus {
+	box-shadow: none;
+}
+/* Стили для модального окна:конец*/
