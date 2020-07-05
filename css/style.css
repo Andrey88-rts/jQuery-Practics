@@ -93,7 +93,7 @@
 /* Стили: конец */
 
 /* Стили для модального окна */
-body {
+/* body {
 	position: relative;
 }
 
@@ -138,5 +138,67 @@ body {
 }
 .form-control:focus {
 	box-shadow: none;
-}
+} */
 /* Стили для модального окна:конец*/
+
+/* Стили для табов */
+body{
+	font-size: 16px;
+	font-weight: 700;
+
+}
+
+.tabs{
+	padding-top: 30px;
+}
+
+.tab{
+	display: inline-block;
+	padding: 10px;
+	border-bottom: 2px solid #235689;
+}
+.tab:hover{
+	cursor: pointer;
+}
+
+.content-tabs{
+	padding: 25px;
+}
+
+.content{
+	display: flex;
+	flex-direction: column;
+	overflow-y: hidden;
+height: 0;
+}
+.active-content{
+	height: auto;
+}
+
+img{
+  margin-bottom: 20px;
+}
+
+#phone,
+#mail {
+  border: none;
+  border-bottom: 2px solid #214e70;
+  font-size: 20px;
+  font-weight: 400;
+  outline: none;
+  color: rgba(0, 0, 0, 0.4);
+  width: 33%;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.button {
+  background-color: rgb(136, 57, 57);
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 15px 50px;
+  width: 33%;
+  border: none;
+}
+/* Конец стилей табов */

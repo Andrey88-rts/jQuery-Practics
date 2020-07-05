@@ -20,23 +20,37 @@
 // Конец кода клавиатурного пианино
 
 //Полноэкранное модальное окно
-$(document).ready(function () {
-  let modal = $(".popup"),
-    overlay = $(".overlay"),
-    link = $('button[data-popup="true"]'),
-    close = $(".close-btn"),
-    fruitName = $(".fruit-name");
+// $(document).ready(function () {
+//   let modal = $(".popup"),
+//     overlay = $(".overlay"),
+//     link = $('button[data-popup="true"]'),
+//     close = $(".close-btn"),
+//     fruitName = $(".fruit-name");
 
 
-  close.click(function () {
-    modal.hide();
-    overlay.hide();
-  });
+//   close.click(function () {
+//     modal.hide();
+//     overlay.hide();
+//   });
 
-  link.on("click", function () {
-    fruitName.text($(this).attr("data-fruit"));
-    modal.show().animate({ left: "0" }, 1000);
-    overlay.show();
-  });
-});
+//   link.on("click", function () {
+//     fruitName.text($(this).attr("data-fruit"));
+//     modal.show().animate({ left: "0" }, 1000);
+//     overlay.show();
+//   });
+// });
 //Конец кода для модального окна
+
+// Табы
+$(document).ready(function () {
+	let tab = $('.tab');
+	tab.on('click', function(){
+		event.preventDefault();
+		$('.content').removeClass('active-content');
+		$('.content[data-tab='+ $(this).attr('data-tab')+']')
+		.toggleClass('active-content');
+		
+	});
+	
+});
+// Конец табов 
